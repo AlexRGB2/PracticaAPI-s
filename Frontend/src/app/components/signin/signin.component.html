@@ -1,9 +1,9 @@
-<div class="row">
-  <div class="col-md-4 mx-auto">
-    <div class="card">
-      <div class="card-header bg-dark">Iniciar Sesion</div>
-      <div class="card-body text-center">
-        <form (submit)="signIn()">
+<div class="container text-center">
+  <div class="card bg-dark">
+    <div class="card-header bg-info">Iniciar Sesion</div>
+    <div class="row">
+      <div class="col-md-5">
+        <form (submit)="signIn()" class="m-5">
           <div class="form-group mt-2">
             <input
               type="email"
@@ -25,10 +25,25 @@
               required
             />
           </div>
-          <button type="submit" class="btn btn-success mt-2 rounded-4">
+          <button type="submit" class="btn btn-warning mt-2 rounded-4">
             Iniciar Sesion
           </button>
         </form>
+      </div>
+      <div class="col m-4">
+        <h2 class="">Somos mas que una Simple API</h2>
+        <p>
+          La PokeAPI llego para quedarse, nuestro sistema esta pensado para
+          ayudar a toda clase de jugadores, desde los novatos hasta los
+          veteranos, te mostramos las caracteristicas de cada pokemon con el fin
+          de hacer mas facil tu aventura.
+        </p>
+        <br />
+        <img
+          class="img-fluid mb-4"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          alt=""
+        />
       </div>
     </div>
   </div>

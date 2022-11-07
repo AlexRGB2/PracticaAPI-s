@@ -27,7 +27,9 @@ export const signUp = async (req, res) => {
     expiresIn: 86400, //24 horas
   });
 
-  res.status(200).json({ token });
+  const name = savedUser.username;
+
+  res.status(200).json({ token, name });
 };
 
 export const signIn = async (req, res) => {

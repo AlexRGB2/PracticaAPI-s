@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-header bg-dark">Crear Cuenta</div>
       <div class="card-body text-center">
-        <form (submit)="signUp()">
+        <form (submit)="signUp()" class="needs-validation" novalidate>
           <div class="form-group">
             <input
               type="text"
@@ -12,18 +12,16 @@
               class="form-control"
               placeholder="Nombre de Usuario"
               required
-              autofocus
             />
           </div>
           <div class="form-group mt-2">
             <input
-              type="text"
+              type="email"
               [(ngModel)]="user.email"
               name="email"
               class="form-control"
               placeholder="Correo Electronico"
               required
-              autofocus
             />
           </div>
           <div class="form-group mt-2">
